@@ -1,13 +1,13 @@
+import Navbar from './layouts/Navbar'
+
 
 function App() {
 
   return (
-    <div className="flex flex-col ">
-      <div className="flex flex-row w-screen">
-        <div className="">1</div>
-        <div>2</div>
-      </div>
-      <div className="">3</div>
+    <div className="h-screen grid grid-cols-[auto_1fr] grid-rows-[1fr_75px] bg-primary-dark gap-2 p-2">
+      <Navbar />
+      <div>2</div>
+      <div className="col-span-2">3</div>
     </div>
   )
 }
